@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .4s;
+}
+
+  #sidebar-wrapper {
+	position: fixed;
+	background: rgba(100, 90, 90, 0.144);
+	height: 100px;
+	padding: 10px 100px;
+	transition: top 0.5s;
+}
+
+nav .logo {
+	float: left;
+	font-size: 24px;
+	transition: .3s;
+}
+
+
+nav ul{
+	
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	transition: .3s;
+	font-weight: bold;
+}
+
+
+
+nav ul li a:focus {
+	outline: none;
+}
+
+nav ul li a.active {
+	background:#e2472f;
+	color: #fff;
+	border-radius: 6px;
+}
+
+nav img {
+	margin-top: 10px;
+	width: 180px;
+}
+
+#foto {
+	background-image: url(fundo.jpg);
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.content {
+	margin-top: 80px;
+}
+
+#text {
+	width: 900px;
+	margin: 30px auto;
+	text-align: justify;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.color{
+	background-color: rgb(255, 255, 255) !important;
+	position:fixed;
+}
+
+@media only screen and (max-width: 991px){
+	
+	#text {
+		font-size: 5em;
+		padding: 1.5em;
+		line-height: 1em;
+
+	}
+
+	nav .logo {
+		float: left;
+		transition: .3s;
+	}
+	
+	
+	nav ul{
+		font-size: 3em;
+		float: center;
+		margin: 30px;
+		padding: 0;
+		display: flex;
+	}
+	
+	nav ul li{
+		list-style: none;
+		text-decoration-line:none;
+		text-decoration-color: none; 
+	
+	}
+	
+	nav ul li a {
+		line-height: 60px;
+		color: #151515;
+		padding: 12px 30px;
+		text-decoration: none;
+		transition: .3s;
+		font-weight: bold;
+	}
+
+	#sidebar-wrapper :active {display: none;}
+  .btn-toggle{display: block;}
+
+	
+	
+	
+	nav ul li a:focus {
+		outline: none;
+	}
+	
+	nav ul li a.active {
+		background:#e2472f;
+		color: #fff;
+		border-radius: 6px;
+	}
+	
+	nav img {
+		margin-top: 1em;
+		width: 100%;
+	}
+
+	#foto {
+		background-image: url(fundo.jpg);
+		width: 100%;
+		height: 70vh;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+
+
